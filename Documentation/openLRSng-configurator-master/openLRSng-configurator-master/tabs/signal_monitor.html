@@ -1,0 +1,40 @@
+<div class="tab-signal_monitor">
+    <div class="status">
+        <div class="indicator"></div>
+        <p i18n="signal_monitor_info"></p>
+        <div class="clear-both"></div>
+    </div>
+    <div class="advanced-ppm">
+        <div class="title" i18n="signal_monitor_ppm_settings_head"></div>
+        <dl>
+            <dt>
+                <select name="min_channels_on_input">
+                    <option value="0" i18n="signal_monitor_off"></option>
+                </select>
+            </dt>
+            <dd i18n="signal_monitor_min_channels_on_input"></dd>
+            <dt>
+                <input id="ppm_in_inverted" class="ppm_in_inverted" type="checkbox" />
+            </dt>
+            <dd>
+                <label i18n="signal_monitor_ppm_in_inverted" for="ppm_in_inverted"></label>
+            </dd>
+            <dt>
+                <input id="ppm_in_micro" class="ppm_in_micro" type="checkbox" />
+            </dt>
+            <dd>
+                <label i18n="signal_monitor_ppm_in_micro" for="ppm_in_micro"></label>
+            </dd>
+        </dl>
+    </div>
+    <table class="bars">
+        <tr>
+            <th class="input" i18n="signal_monitor_head_input"></th>
+            <th class="output" i18n="signal_monitor_head_output"></th>
+            <th class="meter" i18n="signal_monitor_head_value"></th>
+        </tr>
+    </table>
+    <div class="buttons">
+        <a class="save_to_eeprom" href="#" i18n="signal_monitor_button_save_to_eeprom"></a>
+    </div>
+</div>

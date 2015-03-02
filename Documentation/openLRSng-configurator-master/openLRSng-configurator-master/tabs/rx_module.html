@@ -1,0 +1,197 @@
+<div class="tab-RX_module">
+    <div class="left">
+        <div class="basic_setting">
+            <div class="title" i18n="rx_module_basic_settings_head"></div>
+            <dl>
+                <dt i18n="rx_module_minimum_ppm_sync"></dt>
+                <dd>
+                    <input type="number" name="sync_time" min="2500" max="10000" />
+                </dd>
+                <dt i18n="rx_module_inject_rssi"></dt>
+                <dd>
+                    <select name="rssi_inject">
+                        <option value="255" i18n="rx_module_disabled"></option>
+                        <option value="0">1 (Comp)</option>
+                        <option value="1">2 (Comp)</option>
+                        <option value="2">3 (Comp)</option>
+                        <option value="3">4 (Comp)</option>
+                        <option value="4">5 (Comp)</option>
+                        <option value="5">6 (Comp)</option>
+                        <option value="6">7 (Comp)</option>
+                        <option value="7">8 (Comp)</option>
+                        <option value="8">9 (Comp)</option>
+                        <option value="9">10 (Comp)</option>
+                        <option value="10">11 (Comp)</option>
+                        <option value="11">12 (Comp)</option>
+                        <option value="12">13 (Comp)</option>
+                        <option value="13">14 (Comp)</option>
+                        <option value="14">15 (Comp)</option>
+                        <option value="15">16 (Comp)</option>
+                        <option value="16">1 (Qual)</option>
+                        <option value="17">2 (Qual)</option>
+                        <option value="18">3 (Qual)</option>
+                        <option value="19">4 (Qual)</option>
+                        <option value="20">5 (Qual)</option>
+                        <option value="21">6 (Qual)</option>
+                        <option value="22">7 (Qual)</option>
+                        <option value="23">8 (Qual)</option>
+                        <option value="24">9 (Qual)</option>
+                        <option value="25">10 (Qual)</option>
+                        <option value="26">11 (Qual)</option>
+                        <option value="27">12 (Qual)</option>
+                        <option value="28">13 (Qual)</option>
+                        <option value="29">14 (Qual)</option>
+                        <option value="30">15 (Qual)</option>
+                        <option value="31">16 (Qual)</option>
+                        <option value="32">1 (RSSI)</option>
+                        <option value="33">2 (RSSI)</option>
+                        <option value="34">3 (RSSI)</option>
+                        <option value="35">4 (RSSI)</option>
+                        <option value="36">5 (RSSI)</option>
+                        <option value="37">6 (RSSI)</option>
+                        <option value="38">7 (RSSI)</option>
+                        <option value="39">8 (RSSI)</option>
+                        <option value="40">9 (RSSI)</option>
+                        <option value="41">10 (RSSI)</option>
+                        <option value="42">11 (RSSI)</option>
+                        <option value="43">12 (RSSI)</option>
+                        <option value="44">13 (RSSI)</option>
+                        <option value="45">14 (RSSI)</option>
+                        <option value="46">15 (RSSI)</option>
+                        <option value="47">16 (RSSI)</option>
+                        <option value="48">1+2 (Qual+RSSI)</option>
+                        <option value="49">2+3 (Qual+RSSI)</option>
+                        <option value="50">3+4 (Qual+RSSI)</option>
+                        <option value="51">4+5 (Qual+RSSI)</option>
+                        <option value="52">5+6 (Qual+RSSI)</option>
+                        <option value="53">6+7 (Qual+RSSI)</option>
+                        <option value="54">7+8 (Qual+RSSI)</option>
+                        <option value="55">8+9 (Qual+RSSI)</option>
+                        <option value="56">9+10 (Qual+RSSI)</option>
+                        <option value="57">10+11 (Qual+RSSI)</option>
+                        <option value="58">11+12 (Qual+RSSI)</option>
+                        <option value="59">12+13 (Qual+RSSI)</option>
+                        <option value="60">13+14 (Qual+RSSI)</option>
+                        <option value="61">14+15 (Qual+RSSI)</option>
+                        <option value="62">15+16 (Qual+RSSI)</option>
+                    </select>
+                </dd>
+                <dt><span class="note" i18n_title="rx_module_always_bind_on_startup_title" i18n="rx_module_always_bind_on_startup"></span></dt>
+                <dd>
+                    <select name="bind_on_startup">
+                        <option value="0" selected="selected" i18n="rx_module_no"></option>
+                        <option value="1" i18n="rx_module_yes"></option>
+                    </select>
+                </dd>
+                <dt i18n="rx_module_limit_ppm_to_8"></dt>
+                <dd>
+                    <select name="limit_ppm">
+                        <option value="0" selected="selected" i18n="rx_module_no"></option>
+                        <option value="1" i18n="rx_module_yes"></option>
+                    </select>
+                </dd>
+                <dt i18n="rx_module_enable_slave_mode"></dt>
+                <dd>
+                    <select name="slave_mode">
+                        <option value="0" selected="selected" i18n="rx_module_no"></option>
+                        <option value="1" i18n="rx_module_yes"></option>
+                    </select>
+                </dd>
+                <dt><span class="note" i18n_title="rx_module_immediate_output_title" i18n="rx_module_immediate_output"></span></dt>
+                <dd>
+                    <select name="immediate_output">
+                        <option value="0" selected="selected" i18n="rx_module_no"></option>
+                        <option value="1" i18n="rx_module_yes"></option>
+                    </select>
+                </dd>
+                <dt><span class="note" i18n_title="rx_module_static_beacon_title" i18n="rx_module_static_beacon"></span></dt>
+                <dd>
+                    <select name="static_beacon">
+                        <option value="0" selected="selected" i18n="rx_module_no"></option>
+                        <option value="1" i18n="rx_module_yes"></option>
+                    </select>
+                </dd>
+            </dl>
+        </div>
+        <div class="info">
+            <div class="title" i18n="rx_module_info_head"></div>
+            <ul>
+                <li><span class="note" i18n_title="rx_module_watchdog_title" i18n="rx_module_watchdog"></span>: <span class="watchdog" style="font-weight: bold"></span></li>
+                <li><span i18n="rx_module_board"></span>: <span class="board" style="font-weight: bold"></span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="failsafe">
+            <div class="title" i18n="rx_module_failsafe_settings_head"></div>
+            <dl>
+                <dt><span i18n="rx_module_failsafe_delay"></span> - [<span class="failsafe_delay_val" style="font-weight: bold"></span>]</dt>
+                <dd>
+                    <input name="failsafe_delay" type="range" min="0" max="255" />
+                </dd>
+                <dt><span i18n="rx_module_stop_pwm_on_failsafe"></span> - [<span class="stop_pwm_failsafe_val" style="font-weight: bold"></span>]</dt>
+                <dd>
+                    <input class="stop_pwm_failsafe" name="stop_pwm_failsafe" type="range" min="0" max="255" />
+                </dd>
+                <dt><span i18n="rx_module_stop_ppn_on_failsafe"></span> - [<span class="stop_ppm_failsafe_val" style="font-weight: bold"></span>]</dt>
+                <dd>
+                    <input class="stop_ppm_failsafe" name="stop_ppm_failsafe" type="range" min="0" max="255" />
+                </dd>
+            </dl>
+            <div class="clear-both"></div>
+        </div>
+        <div class="beacon">
+            <div class="title" i18n="rx_module_beacon_settings_head"></div>
+            <dl>
+                <dt><span class="note" i18n="rx_module_beacon_frequency"></span></dt><!-- title is dynamically filled from JS side -->
+                <dd>
+                    <div class="hybrid_element">
+                        <input type="text" name="beacon_frequency" spellcheck="false" />
+                        <select class="beacon_frequency_helper" name="beacon_frequency_helper">
+                            <option value="0" i18n="rx_module_disabled"></option>
+                            <option value="462562500">FRS ch - 1</option>
+                            <option value="462587500">FRS ch - 2</option>
+                            <option value="462612500">FRS ch - 3</option>
+                            <option value="462637500">FRS ch - 4</option>
+                            <option value="462662500">FRS ch - 5</option>
+                            <option value="462687500">FRS ch - 6</option>
+                            <option value="462712500">FRS ch - 7</option>
+
+                            <option value="446006250">PMR ch - 1</option>
+                            <option value="446018750">PMR ch - 2</option>
+                            <option value="446031250">PMR ch - 3</option>
+                            <option value="446043750">PMR ch - 4</option>
+                            <option value="446056250">PMR ch - 5</option>
+                            <option value="446068750">PMR ch - 6</option>
+                            <option value="446081250">PMR ch - 7</option>
+                            <option value="446093750">PMR ch - 8</option>
+                        </select>
+                    </div>
+                </dd>
+                <dt><span i18n="rx_module_beacon_interval"></span> - [<span class="beacon_interval_val" style="font-weight: bold"></span>]</dt>
+                <dd>
+                    <input type="range" name="beacon_interval" min="1" max="255" />
+                </dd>
+                <dt><span i18n="rx_module_beacon_deadtime"></span> - [<span class="beacon_deadtime_val" style="font-weight: bold"></span>]</dt>
+                <dd>
+                    <input type="range" name="beacon_deadtime" min="100" max="355" />
+                </dd>
+            </dl>
+            <div class="clear-both"></div>
+        </div>
+    </div>
+    <div class="channel_output">
+        <div class="title" i18n="rx_module_channel_output_head"></div>
+        <dl>
+            <!-- select array is dynamically generated from JS side -->
+        </dl>
+    </div>
+    <div class="clear-both"></div>
+    <div class="buttons">
+        <a class="save_to_file" href="#" i18n="rx_module_button_backup_configuration"></a>
+        <a class="restore_from_file" href="#" i18n="rx_module_button_restore_from_file"></a>
+        <a class="restore_default" href="#" i18n="rx_module_button_restore_default"></a>
+        <a class="save_to_eeprom" href="#" i18n="rx_module_button_save_to_eeprom"></a>
+        <a class="edit_failsafe_values" href="#" i18n="rx_module_button_edit_failsafe_values"></a>
+    </div>
+</div>

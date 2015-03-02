@@ -1,0 +1,155 @@
+<div class="tab-TX_module">
+    <div class="basic_settings">
+        <div class="title" i18n="tx_module_basic_settings_head"></div>
+        <dl>
+            <dt i18n="tx_module_default_profile"></dt>
+            <dd>
+                <select class="default_profile" name="default_profile">
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">SWITCH</option>
+                </select>
+            </dd>
+            <dt i18n="tx_module_profile_1_4"></dt>
+            <dd>
+                <a class="clone_profile" href="#" i18n="tx_module_clone_settings" i18n_title="tx_module_clone_title"></a>
+                <select class="profile" name="profile">
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                </select>
+            </dd>
+            <dt i18n="tx_module_operating_frequency"></dt>
+            <dd>
+                <input type="number" name="operating_frequency" min="0" />
+            </dd>
+            <dt i18n="tx_module_rf_power"></dt>
+            <dd>
+                <input type="number" name="rf_power" min="0" max="7" />
+            </dd>
+            <dt i18n="tx_module_channel_spacing"></dt>
+            <dd>
+                <input type="number" name="channel_spacing" min="5" max="25" />
+            </dd>
+            <dt i18n="tx_module_serial_baudrate"></dt>
+            <dd>
+                <select class="serial_baudrate" name="serial_baudrate">
+                    <option value="115200">115200</option>
+                    <option value="57600">57600</option>
+                    <option value="38400">38400</option>
+                    <option value="28800">28800</option>
+                    <option value="19200">19200</option>
+                    <option value="14400">14400</option>
+                    <option value="9600">9600</option>
+                    <option value="4800">4800</option>
+                    <option value="2400">2400</option>
+                    <option value="1200">1200</option>
+                    <option value="4">SUMD</option>
+                    <option value="3">SBUS</option>
+                    <option value="2">SPEKTRUM2048</option>
+                    <option value="1">SPEKTRUM1024</option>
+                </select>
+            </dd>
+            <dt i18n="tx_module_data_rate"></dt>
+            <dd>
+                <select class="data_rate" name="data_rate">
+                    <option value="0">4800</option>
+                    <option value="1">9600</option>
+                    <option value="2">19200</option>
+                    <option value="3" i18n="tx_module_57600_experimental"></option>
+                    <option value="4" i18n="tx_module_125000_experimental"></option>
+                </select>
+            </dd>
+            <dt i18n="tx_module_telemetry_selection"></dt>
+            <dd>
+                <select class="telemetry" name="telemetry">
+                    <option value="0" i18n="tx_module_no"></option>
+                    <option value="1" i18n="tx_module_yes"></option>
+                    <option value="2" i18n="tx_module_yes_frsky"></option>
+                    <option value="3" i18n="tx_module_yes_smartport"></option>
+                </select>
+            </dd>
+            <dt i18n="tx_module_rc_output_configuration"></dt>
+            <dd>
+                <select name="channel_config">
+                    <option value="1" i18n="tx_module_4channels_4switches"></option>
+                    <option value="2" i18n="tx_module_8channels"></option>
+                    <option value="3" i18n="tx_module_8channels_4switches"></option>
+                    <option value="4" i18n="tx_module_12channels"></option>
+                    <option value="5" i18n="tx_module_12channels_4switches"></option>
+                    <option value="6" i18n="tx_module_16channels"></option>
+                </select>
+            </dd>
+            <dt><span class="note" i18n="tx_module_enable_diversity" i18n_title="tx_module_enable_diversity_title"></span></dt>
+            <dd>
+              <select name="enable_diversity">
+                <option value="0" i18n="tx_module_no"></option>
+                <option value="1" i18n="tx_module_yes"></option>
+              </select>
+            </dd>
+        </dl>
+    </div>
+    <div class="right_side">
+        <div class="advanced_settings">
+            <div class="title" i18n="tx_module_advanced_settings_head"></div>
+            <dl>
+                <dt i18n="tx_module_number_of_hop_channels"></dt>
+                <dd><input type="number" name="hopcount" min="1" max="24" /><a class="randomize" href="#" i18n="tx_module_button_randomize" i18n_title="tx_module_button_randomize_title"></a></dd>
+                <dt i18n="tx_module_maximum_desired_frequency"></dt>
+                <dd><input type="number" name="maximum_desired_frequency" /></dd>
+                <dt><span class="note" i18n="tx_module_mute_buzzer" i18n_title="tx_module_mute_buzzer_title"></span></dt>
+                <dd>
+                    <select name="silent_buzzer">
+                        <option value="0" i18n="tx_module_no"></option>
+                        <option value="1" i18n="tx_module_yes"></option>
+                    </select>
+                </dd>
+                <dt><span class="note" i18n="tx_module_alt_power" i18n_title="tx_module_alt_power_title"></span></dt>
+                <dd>
+                    <select name="alt_power">
+                        <option value="0" i18n="tx_module_no"></option>
+                        <option value="1" i18n="tx_module_yes"></option>
+                    </select>
+                </dd>
+                <dt><span class="note" i18n="tx_module_sw_power" i18n_title="tx_module_sw_power_title"></span></dt>
+                <dd>
+                    <select name="sw_power">
+                        <option value="0" i18n="tx_module_no"></option>
+                        <option value="1" i18n="tx_module_yes"></option>
+                    </select>
+                </dd>
+            </dl>
+        </div>
+        <div class="info">
+            <div class="title" i18n="tx_module_info_head"></div>
+            <div class="left">
+                <span i18n="tx_module_maximum_frequency"></span>: <span class="maximum_frequency" style="font-weight: bold"></span><br />
+                <span i18n="tx_module_rfm_type"></span>: <span class="rfm_type" style="font-weight: bold"></span><br />
+                <span i18n="tx_module_bind_code"></span>: <input class="bind_code" type="text" disabled="disabled" spellcheck="false" /><input class="automatic_bind_code" type="checkbox" i18n_title="tx_module_bind_code_title" checked="checked" /><br />
+            </div>
+            <div class="right">
+                <span i18n="tx_module_refresh_rate"></span>: <span class="refresh_rate" style="font-weight: bold"></span><br />
+                <span i18n="tx_module_packet_interval"></span>: <span class="packet_interval" style="font-weight: bold"></span><br />
+                <span class="note" i18n_title="tx_module_watchdog_title" i18n="tx_module_watchdog"></span>: <span class="watchdog" style="font-weight: bold"></span><br />
+            </div>
+            <div class="clear-both"></div>
+        </div>
+    </div>
+    <div class="clear-both"></div>
+    <div class="hop_channels">
+        <div class="title" i18n="tx_module_hop_channels_head"></div>
+        <div class="list">
+        </div>
+        <div class="clear-both"></div>
+    </div>
+    <div class="buttons">
+        <a class="backup_single_profile" href="#" i18n="tx_module_button_backup_this_profile"></a>
+        <a class="backup_all_profiles" href="#" i18n="tx_module_button_backup_all_profiles"></a>
+        <a class="restore_from_file" href="#" i18n="tx_module_button_restore_from_file"></a>
+        <a class="restore_default" href="#" i18n="tx_module_button_restore_default"></a>
+        <a class="save_to_eeprom" href="#" i18n="tx_module_button_save_to_eeprom"></a>
+    </div>
+</div>

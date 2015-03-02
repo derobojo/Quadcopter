@@ -1,0 +1,91 @@
+<div class="tab-uploader">
+    <div class="left-side">
+        <div class="select_firmware">
+            <div class="title" i18n="firmware_uploader_select_board_head"></div>
+            <div class="module_select">
+                <div class="center">
+                    <label>
+                        <input class="auto_update" type="radio" name="module" value="auto_update" />
+                        <span i18n="firmware_uploader_auto_update"></span>
+                    </label>
+                </div>
+                <div class="left">
+                    <label>
+                        <input class="tx_module" type="radio" name="module" value="TX" />
+                        <span i18n="firmware_uploader_tx_module"></span>
+                    </label>
+                </div>
+                <div class="right">
+                    <label>
+                        <input class="rx_module" type="radio" name="module" value="RX" />
+                        <span i18n="firmware_uploader_rx_module"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="clear-both"></div>
+            <select class="boards_TX" name="boards_TX">
+                <option value="TX-4">4 - OpenLRSngTX by Kha</option>
+                <option value="TX-4">4 - HawkEye JR/Futaba Module TX</option>
+                <option value="TX-4">4 - Deluxe JR TX</option>
+                <option value="TX-6">6 - DTFUHF &amp; Hawkeye DeluxeTX</option>
+                <option value="TX-3">3 - HawkEye 9ch RX as TX</option>
+                <option value="TX-5">5 - HawkEye 1W RX as TX</option>
+                <option value="TX-5">5 - DTFUHF 4ch as TX</option>
+                <option value="TX-5">5 - HawkEye 6ch as TX</option>
+                <option value="TX-7">7 - PowerTowerRX as TX</option>
+                <option value="TX-8">8 - microRX as TX</option>
+                <option value="TX-9">9 - BroversityRX as TX</option>
+                <option value="TX-2">2 - Hobbyking OrangeRx UHF TX</option>
+                <option value="TX-3">3 - Hobbyking OrangeRx UHF 9ch RX as TX</option>
+                <option value="TX-0">2 - Flytron M1 Tx Board</option>
+                <option value="TX-2">2 - Flytron M2/M3 Tx Board</option>
+                <option value="TX-3">3 - Flytron OpenLRS RX v2 Board as TX</option>
+            </select>
+            <select class="boards_RX" name="boards_RX">
+                <option value="RX-2">2 - OrangeRX UHF TX as RX</option>
+                <option value="RX-2">2 - Flytron TX as RX</option>
+                <option value="RX-3">3 - HawkEye 9ch RX</option>
+                <option value="RX-5">5 - HawkEye 1W RX</option>
+                <option value="RX-5">5 - DTFUHF 4/6ch RX</option>
+                <option value="RX-5">5 - DTFUHF MiniRX</option>
+                <option value="RX-7">7 - PowerTowerRX</option>
+                <option value="RX-8">8 - microRX</option>
+                <option value="RX-9">9 - BroversityRX</option>
+                <option value="RX-3">3 - Flytron OpenLRS RX v2 Board</option>
+                <option value="RX-3">3 - Hobbyking OrangeRx UHF RX</option>
+            </select>
+            <div class="clear-both"></div>
+        </div>
+        <div class="firmware_info">
+            <div class="title" i18n="firmware_uploader_firmware_info_head"></div>
+            <dl>
+                <dt i18n="firmware_uploader_type"></dt>
+                <dd class="type" i18n="firmware_uploader_board_not_selected"></dd>
+                <dt i18n="firmware_uploader_version"></dt>
+                <dd class="version" i18n="firmware_uploader_unknown"></dd>
+                <dt i18n="firmware_uploader_size"></dt>
+                <dd class="size" i18n="firmware_uploader_unknown"></dd>
+            </dl>
+        </div>
+        <div class="flash_controls">
+            <a href="#" class="flash" i18n="firmware_uploader_flash_firmware"></a>
+            <div class="erase_eeprom">
+                <span i18n="firmware_uploader_erase_eeprom"></span>
+                <input type="checkbox" name="erase_eeprom" value="1" checked="checked" />
+            </div>
+        </div>
+    </div>
+    <div class="instructions">
+        <div class="title" i18n="firmware_uploader_instructions_head"></div>
+        <p i18n="firmware_uploader_firmware_uploader_instructions_text">
+        </p>
+    </div>
+    <div class="custom_firmware">
+        <div class="title" i18n="firmware_uploader_flashing_custom_head"></div>
+        <p i18n="firmware_uploader_firmware_uploader_flashing_custom_text">
+        </p>
+        <a href="#" class="load_custom_firmware" i18n="firmware_uploader_load_custom_firmware"></a>
+    </div>
+    <div class="clear-both"></div>
+    <a href="#" class="go_back" i18n="firmware_uploader_leave_button"></a>
+</div>
